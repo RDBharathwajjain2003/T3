@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+<body>
+    <div class="a_box">
+        <p class="a_msg">msg</p>
+    </div>
+    <div class="l_form">
+        <h1 class="login">
+            login
+        </h1>
+        <form action="/login" method="post">
+            <input type="email" name="email" placeholder="email" autocomplete="off" class="email" required>
+            <input type="password" name="password" placeholder="password" autocomplete="off" class="password" required>
+            <button class="submit-btn">log in</button>
+        </form>
+        <hr>
+        <a href="/register" class="link" role="button">don't have an account? Register one</a>
+    </div>
+<%- include("partials/footer") -%>
